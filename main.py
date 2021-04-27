@@ -6,7 +6,7 @@ from alive import suffer
 
 # Google Sheets BS
 SCOPE = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-CREDENTIAL = ServiceAccountCredentials.from_json_keyfile_name('cert.json', SCOPE) # This is very insecure. Make sure no one finds this repl
+CREDENTIAL = ServiceAccountCredentials.from_json_keyfile_name('cert.json', SCOPE) # cert.json is not committed :innocent:
 CLIENT = gspread.authorize(CREDENTIAL)
 
 def log(obj): print('[LOG]', obj)
