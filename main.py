@@ -238,9 +238,7 @@ async def leaderboard(ctx: cmd.Context):
 	embed = discord.Embed(title = f'Problem of Week Leaderboard', color = discord.Color.blurple(), description = 'https://docs.google.com/spreadsheets/d/1ffDocLKYnE9ub2EGJRlX8bnUBHFAMf6EgDhUNDZ5UJA/edit?usp=sharing')
 	await dm.send(embed = embed)
 
-@bot.command(
-my_secret = os.environ['DISCORD']
-
+@bot.command( 
 	name = 'starfanclub',
 	brief = 'Join the Star Fan Club! Syntax: !starfanclub',
 	pass_context = True
